@@ -15,7 +15,7 @@ Copyright's:
 ---
 
 ## What has been done
-- [x] Recommendations - *%60*
+- [x] Recommendations
 - [ ] Search - *Almost not started*
 - [ ] Watch - *Almost not started*
 - [ ] Channel page - *Almost not started*
