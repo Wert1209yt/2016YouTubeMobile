@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <style name="www-roboto">@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0fZraR2Tg8w2lzm7kLNL0-w.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0V4sYYdJg5dU2qzJEVSuta0.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0VBW26QxpSj-_ZKm_xT4hWw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Qt_Rm691LTebKfY2ZkKSmI.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0dDiNsR5a-9Oe_Ivpu8XWlY.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0aE8kM4xWR1_1bYURRojRGc.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Ygp9Q8gbYrhqGlRav_IXfk.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/WxrXJa0C3KdtC7lMafG4dRkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/OpXUqTo0UgQQhGj_SFdLWBkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/1hZf02POANh32k2VkgEoUBkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/cDKhRaXnQTOVbaoxwdOr9xkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/K23cxWVTrIFD6DJsEVi07RkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vSzulfKSK0LLjjfeaxcREhkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByXYhjbSpvc47ee6xR_80Hnw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;}</style><script name="www-roboto">if (document.fonts && document.fonts.load) {document.fonts.load("400 10pt Roboto", "E");document.fonts.load("500 10pt Roboto", "E");}</script>
+      <script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},info: {}});},now: window.performance && window.performance.timing &&window.performance.now ? function() {return window.performance.timing.navigationStart + window.performance.now();} : function() {return (new Date()).getTime();},tick: function(l, t, n) {ticks = ytcsi.gt(n).tick;var v = t || ytcsi.now();if (ticks[l]) {ticks['_' + l] = (ticks['_' + l] || [ticks[l]]);ticks['_' + l].push(v);}ticks[l] = v;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w, d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) == 'prerender';var vName = d.webkitVisibilityState ? 'webkitvisibilitychange' : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick = function() {ytcsi.setStart('dhs');d.removeEventListener(vName, startTick);};d.addEventListener(vName, startTick, false);}if (d.addEventListener) {d.addEventListener(vName, function() {ytcsi.tick('vc');}, false);}w.__ytRIL = function(el) {if (!el.getAttribute('data-thumb')) {el.loadTime = ytcsi.now();}};})(window, document);</script>
+    <script>if (window.ytcsi) {window.ytcsi.tick("_start", null, 'initpb');}</script>
+    <script>if (window.ytcsi) {window.ytcsi.tick("_start", null, 'blz_watch_ads');}</script>
+    <script>if (window.ytcsi) {window.ytcsi.tick("_start", null, 'blz_home_ads');}</script>
+    <script>if (window.ytcsi) {window.ytcsi.tick("_start", null, 'blz_search_ads');}</script>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+
+  <link rel="icon" href="//s.ytimg.com/yts/favicon-vflz7uhzw.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="//s.ytimg.com/yts/favicon-vflz7uhzw.ico" type="image/x-icon">   <link rel="apple-touch-icon-precomposed" href="//s.ytimg.com/yts/mobile/img/apple-touch-icon-144x144-precomposed-vflwq-hLZ.png" sizes="144x144">
+  <link rel="apple-touch-icon-precomposed" href="//s.ytimg.com/yts/mobile/img/apple-touch-icon-114x114-precomposed-vflLGbwkc.png" sizes="114x114">
+  <link rel="apple-touch-icon-precomposed" href="//s.ytimg.com/yts/mobile/img/apple-touch-icon-72x72-precomposed-vflNiFbcD.png" sizes="72x72">
+  <link rel="apple-touch-icon-precomposed" href="//s.ytimg.com/yts/mobile/img/apple-touch-icon-57x57-precomposed-vflKsw8eJ.png">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/mobile-nirvana-tablet-mangled-vflpJkmmj.css" id="page_css">
+
+  </head>
+  <body id="body" class="atom fusion-tn">
+        <script>
+      var original_url = encodeURIComponent(encodeURIComponent(encodeURIComponent(document.location.href)));
+      var iframe_url = 'https://accounts.google.com/ServiceLogin?passive=true&amp;uilel=3&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3Dhttp%253A%252F%252Fm.youtube.com%252Fsignin_passive%253Foriginal_url%253DORIGINAL_URL_PLACE_HOLDER%26feature%3Dmobile_passive%26action_handle_signin%3Dtrue%26hl%3Den%26app%3Dm&amp;hl=en&amp;service=youtube'.replace('ORIGINAL_URL_PLACE_HOLDER', original_url);
+      document.write('<iframe src=\"' + iframe_url + '\" style=\"width:0;height:0;margin:0;border-width:0;padding:0;position:absolute;\"></iframe>');
+    </script>
+
+  <div id="player"></div>
+  <div id="guide-layout-container">
+    <div id="guide-container"></div>
+    <div id="content-container">
+      <div id="content"></div>
+    </div>
+    <div id="guide-overlay"></div>
+    <div id="lightbox"></div>
+    <div id="toast"></div>
+    <div id="content-overlay"></div>
+  </div>
+  <div id="_yt_orientation_detect"></div>
+
+  </body>
+  
+
+  <script type="text/javascript">
+      window.yterr = true;
+  </script>
+
+
+    <script>
+        window.settings = {"localeName":"Worldwide","onDemandModules":{"mobile_blazer_pubsub_mod":{"dependency":[],"src":"https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-vflFQuR-y\/pubsub.js"},"mobile_blazer_remote_mod":{"dependency":["mobile_blazer_pubsub_mod"],"src":"https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-vflFQuR-y\/remote.js"},"mobile_blazer_noncore_mod":{"dependency":[],"src":"https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-vflFQuR-y\/noncore.js"},"ext_googleanalytics":{"dependency":[],"src":"\/\/www.google-analytics.com\/ga.js"}},"sts":17031,"gl":"US","experiments":{"flags":{"html5_playing_event_buffer_underrun":true,"enable_google_tag_manager_for_red_page":true,"mweb_dclk_status_pings":true,"gfeedback_for_signed_out_mweb_users_enabled":true,"suggest_exp_str":"","ytu_landing_page_button_color":"","send_pyv_search_as_delayed":true,"navigation_only_csi_reset":true,"enable_pyv_search_creative_relevance_channel":true,"mweb_blazer_player_attestation":true,"ajax_204_success":true},"fexp":"9419452,9421733,9422596,9428398,9431012,9433096,9433221,9433946,9435526,9436835,9437981,9438525,9438662,9439580,9440456,9440542,9441387,9441535,9442424,9442426,9443053,9444829,9445142,9445649","ids":[9419452,9421733,9436835,9437981,9438525,9440456,9440542,9441387,9441535,9443053,9444829,9445142,9445649]},"lastReloadReason":"","isWifi":true,"propagatedAjaxParams":{},"build_id":131234152,"languageName":"English","isPolymerUser":false,"client_version":"1.20160824","signed_in_username":"","resizedPlayer":false,"googlePlusShareUrl":"https:\/\/plus.google.com\/share","playerType":"html5","supportsLiveStream":true,"build_label":"youtube_20160824_RC2","psuggestToken":null,"airplay":false,"gapiParams":{"DELEGATED_SESSION_ID":null,"GAPI_LOCALE":"en_US","SESSION_INDEX":null,"LOGGED_IN":false,"GAPI_HINT_OVERRIDE":false,"GAPI_HINT_PARAMS":"m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.xej1Zm3gE0Y.O\/m=__features__\/rt=j\/d=1\/rs=AHpOoo-sR4lSlZfnlntJ-N0rG1mLyBSreQ","GAPI_HOST":"https:\/\/apis.google.com"},"locale":"en_US","isLightweight":false,"supportsSms":true,"consentState":0,"externalSpriteCssPaths":null,"spriteInfo":{"main":{"styles":[["_mbtb",0,-1291,24,24],["_mddc",0,-118,20,20],["_mudc",0,-904,24,24],["_mmc",0,-28,18,18],["_mvd",-28,-504,20,20],["_mcxb",-16,-396,24,24],["_mhib",-34,-613,12,20],["_mwob",0,-424,24,24],["_mpqb",0,-870,12,8],["_mcob",0,-814,8,8],["_medc",-22,-1072,11,11],["_mvib",0,-84,13,14],["_mpjb",0,-1193,32,32],["_mfkb",0,-1160,29,29],["_mzac",0,-396,12,12],["_myac",0,-1044,12,12],["_mqd",0,-848,18,18],["_mrd",0,-1060,18,18],["_mqac",0,-1143,30,13],["_mfdc",0,-452,24,24],["_mub",0,0,24,24],["_mlc",-28,-1319,18,18],["_mikb",0,-1115,19,16],["_mgdc",0,-585,24,24],["_maec",0,-501,24,24],["_mysb",-22,-1044,24,24],["_mrdc",0,-1319,24,24],["_mhdc",-22,-1263,24,24],["_mwac",-28,-174,12,12],["_mvac",0,-1082,12,12],["_mtd",0,-613,30,30],["_msd",0,-740,30,30],["_mxd",0,-1263,18,18],["_mwd",0,-932,18,18],["_mhlb",-28,-1016,15,15],["_mxrb",0,-366,36,26],["_midc",0,-557,24,24],["_mecc",-17,-84,30,30],["_mjkb",0,-707,29,29],["_mwxb",0,-647,13,13],["_msxb",-28,-557,20,20],["_mdjb",0,-480,17,17],["_mjdc",0,-234,16,16],["_mplb",-28,-56,4,16],["_mdsb",-20,-234,24,24],["_mfmb",0,-774,36,36],["_mmob",-28,-452,20,20],["_mrxb",-28,-585,20,20],["_mldc",-28,0,16,16],["_mmdc",-28,-190,16,16],["_mndc",-28,-262,16,16],["_mkdc",0,-306,24,24],["_mhd",-28,-679,20,20],["_modc",0,-202,24,24],["_mud",-28,-1291,20,20],["_mznb",0,-174,24,24],["_mynb",0,-56,24,24],["_mnc",0,-262,24,24],["_mzd",-28,-480,20,20],["_mgd",-28,-210,20,20],["_mdqb",0,-1347,16,12],["_mcqb",-20,-1347,16,12],["_mfqb",0,-290,16,12],["_matb",0,-679,24,24],["_msdc",-22,-28,24,24],["_mpdc",-22,-1087,24,24],["_mqdc",-28,-988,19,23],["_mvdc",-17,-647,28,28],["_mqc",-28,-282,18,18],["_mx",0,-1229,30,30],["_my",-12,-814,30,30],["_mmhb",0,-146,48,24],["_mlhb",0,-960,48,24],["_mzsb",0,-529,24,24],["_mtdc",-22,-848,24,24],["_mvb",-22,-932,24,24],["_mwdc",-24,-118,24,24],["_mxdc",-22,-876,24,24],["_mydc",0,-1016,24,24],["_mzdc",0,-988,24,24],["_mbec",-23,-1115,24,24],["_mcec",0,-334,40,28]],"bg_height":1359.0,"bg_width":48.0,"urls":{"low":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-low-vflG7Hgy3.png","high":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-high-vflXnNu_4.png","vhigh":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-vhigh-vflzHh6Fo.png"}},"remote":{"styles":[["_mtpb",0,-24,24,24],["_mspb",0,-52,24,24],["_minb",-28,-88,36,36],["_munb",-28,0,40,40],["_msnb",-28,-44,40,40],["_msvb",0,0,20,20],["_mrvb",0,-80,24,20]],"bg_height":124.0,"bg_width":68.0,"urls":{"low":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-low-vflBgP7dp.png","high":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-high-vfljmYxbp.png","vhigh":"\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-vhigh-vflZQl7Q-.png"}}},"supportsCssScroller":true,"playerModule":"mobile_blazer_mobileplayer_mod","loginPlaceHolder":"_NEXT_URL_PLACEHOLDER_","gaiaPhotoUrl":null,"build_signature":"en:9415398,9416475,9417035,9417482,9419452,9419979,9421733,9422596,9423552,9423555,9424603,9424678,9425648,9428398,9430082,9430877,9431012,9432924,9432939,9433096,9433221,9433839,9433870,9433881,9433946,9434077,9434686,9434949,9435526,9436835,9437506,9437553,9437981,9438153,9438309,9438525,9438662,9439452,9439580,9439877,9439958,9440054,9440345,9440456,9440542,9440723,9440792,9441194,9441321,9441323,9441387,9441535,9441541,9441798,9441929,9442077,9442210,9442424,9442426,9442746,9443053,9443156,9443507,9443715,9444180,9444189,9444355,9444377,9444400,9444657,9444819,9444829,9444986,9445139,9445142,9445634,9445649,9445845","supportsAutoplay":true,"channelUrl":null,"isBigTablet":false,"isEuCountry":false,"variants_checksum":"f91ede95193d4c60f6253ad91c30033e","loginURLFormat":"https:\/\/accounts.google.com\/ServiceLogin?passive=true\u0026uilel=3\u0026continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D_NEXT_URL_PLACEHOLDER_%26feature%3Dblazerbootstrap%26action_handle_signin%3Dtrue%26hl%3Den%26app%3Dm\u0026hl=en\u0026service=youtube","client_name":"","deviceClassification":{"cmodel":"kfsowi","cplayer":"BLAZER_PLAYER_INLINE","c":"MWEB","cosver":"4.4.3","cbrand":"amazon","cos":"Android","cver":"1.20160824","cplatform":"TABLET","cbr":"Chrome","cbrver":"51.0.2704.81"},"thumbnail_sizes":{"THUMBNAIL_unlimited_header":[964,164],"THUMBNAIL_compact_playlist":[240,136],"THUMBNAIL_mealbar_promo":[80,80],"THUMBNAIL_video_with_context":[1440,810],"THUMBNAIL_compact_movie":[240,136],"_mryb":[24,24],"THUMBNAIL_playlist_video":[240,136],"_mjrb":[240,136],"THUMBNAIL_feed_entry_owner":[28,28],"_mcbc":[88,88],"THUMBNAIL_channel_thumbnail_with_link":[0,0],"_mngc":[28,28],"THUMBNAIL_guide_avatar":[28,28],"THUMBNAIL_compact_radio":[240,136],"THUMBNAIL_playlist_panel_video":[240,136],"THUMBNAIL_playlist_header":[255,144]},"sessionIndex":null,"lateLoadedModules":{"mobile_blazer_mobileplayer_mod":{"dependency":[]}},"isAndroidTablet":true,"supportsCastV2":false,"isTablet":true,"isRtl":false,"inProduction":true,"language":"en","spacecastQueryParams":null,"privacyPolicyUrl":"https:\/\/www.google.com\/intl\/en\/policies\/privacy\/","build_timestamp":1472084111,"tosDate":"5\/22\/16","signed_in_email":""};
+  window.images = {"zeroStateSubs":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/zero_state_subs-vflziK5fn.png","pairingNormal":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/promo_mdx-vflTsv75I.png","musicpassCheckmark":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/checkmark-vflxy9dWj.png","signInPromo":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/sign_in_promo-vfluaJRxi.png","musicpassLogo":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_logo-vflbOMaYG.png","musicpassIconNoAds":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_no_ads-vflZGwb_o.png","musicpassIconBackground":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_background-vfle--OBZ.png","tipJarCheck":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/checkmark-vfle9OFTf.png","consentLightboxMasthead":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/consent_lightbox_masthead-vfl5wdzhR.png","musicpassBackgroundBanner":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_banner-vfleWtkAd.png","musicpassIconOffline":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_offline-vflsZZlLB.png","musicpassFeature1":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_1-vflP0JM5Q.png","pairingSuccess":"https:\/\/s.ytimg.com\/yts\/mobile\/img\/promo_mdx_success-vflB4fJyj.png","musicpassFeature2":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_2-vflM5Fm1o.png","musicpassFeature3":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_3-vfl9cXjeD.png","musicpassFeature4":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_4-vflK8iQTH.jpg","musicpassHero":"https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_hero-vflrTJ-ae.jpg","defaultProfile":"\/\/s.ytimg.com\/yts\/img\/avatar_48-vfllY0UTT.png"};
+    
+
+    </script>
+      <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-vflFQuR-y/core.js"></script>
+      <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-vflFQuR-y/watch.js"></script>
+      <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-vflFQuR-y/logged_out_users.js"></script>
+
+  <script type="text/javascript">
+    function initialize() {
+      try {
+        initBlazer();
+      } catch (errObj) {
+        reportJsFailure(11,                          errObj);
+      }
+    }
+
+    var errorPings = [];
+    function reportJsFailure(reason, errObj, errInfo) {
+      var localSettings = window.settings || {};
+      localSettings.experiments = localSettings.experiments || [];
+
+      if (window['yterr']) {
+        var params = {
+          'type': errObj ? errObj.name : '',
+          'msg': errObj ? errObj.message : '',
+          'file': errObj ? errObj.fileName : '',
+          'line': errObj ? errObj.lineNumber : '',
+          'url': document.location.href,
+          'level': 'ERROR',
+
+          'type_code': reason,
+          'lang': localSettings.language,
+          'locale': localSettings.locale,
+          'prev_url': document.referrer,
+          'misc': errInfo,
+
+          'stack': (errObj.stack || '').substr(0, 500)
+        };
+        var url = ['/error_204?'];
+        for (var p in params) {
+          url.push('&' + p + '=' + encodeURIComponent(params[p]));
+        }
+        var img = new Image();
+        img.src = url.join('');
+        errorPings.push(img);
+      }
+
+      if (!localSettings.inProduction) {
+        throw errObj;
+      }
+    }
+
+      yt.setConfig({
+          'CLIENT_PROTOCOL': "HTTP\/1.1",
+          'CLIENT_TRANSPORT': "tcp",
+        'CSI_ENABLED': true
+      });
+
+
+    yt.setConfig(
+      'SEARCHBOX_URL', "\/\/s.ytimg.com\/yts\/jsbin\/mobile-searchbox-vflcT4-cR\/mobile-searchbox.js"
+    );
+
+      initialize();
+      
+  </script>
+
+      <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-vflFQuR-y/mobileplayer.js"></script>
+      <script type="text/javascript" id="late_loaded_mobile_blazer_mobileplayer_mod">
+        notifyScriptLoaded("mobile_blazer_mobileplayer_mod");
+      </script>
+
+  
+
+  <noscript>
+Please enable JavaScript on your browser.
+  </noscript>
+</html>
