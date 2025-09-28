@@ -7,7 +7,7 @@ const { spawn } = require("child_process");
 const PORT = process.env.PORT || 3000;
 
 const assetsPath = path.join(__dirname, "assets");
-const feedFilePath = path.join(__dirname, "API", "feed.json);
+const feedFilePath = path.join(__dirname, "API", "feed.json");
 const searchPhpPath = path.join(__dirname, "API", "search.php");
 
 let lastSearchQuery = "";
