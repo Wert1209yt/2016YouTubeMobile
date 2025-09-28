@@ -1,7 +1,7 @@
 <?php
 include('../config.php');
 
-$searchquery = "http://" . $yourapi . "/searchquery";
+$searchquery = "http://" . $yourip . "/searchquery";
 $query = file_get_contents($searchquery);
 
 $search = "http://" . $invidious . "/api/v1/search?q=" . $query;
