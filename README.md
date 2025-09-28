@@ -3,7 +3,7 @@ This project revives the HTML version of the 2016 YouTube mobile app. The origin
 
 ---
 
-Copyright's:
+## Copyright's:
 - **Wert1209yt**
    - Creator of 2016YouTubeMobile
 - **Invidious**
@@ -12,6 +12,16 @@ Copyright's:
    - YouTube owner
 - **YouTube**
    - Developer
+
+---
+
+## Instalation
+1. `git clone https://github.com/Wert1209yt/2016YouTubeMobile`
+2. `cd 2016YouTubeMobile`
+3. Set up config.php
+4. `node server.js`
+### Shutdown
+<kbd>CTRL</kbd> + <kbd>C</kbd> - *Server will shutdown*
 
 ---
 
