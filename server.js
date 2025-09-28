@@ -7,20 +7,20 @@ const { spawn } = require("child_process");
 const PORT = process.env.PORT || 3000;
 
 const assetsPath = path.join(__dirname, "assets");
-const feedFilePath = path.join(__dirname, "API", "feed.json");
+const feedFilePath = path.join(__dirname, "API", "feed.txt");
 const searchPhpPath = path.join(__dirname, "API", "search.php");
 
-// Храним последний q
 let lastSearchQuery = "";
 
-// Функция запуска PHP
+// ---- Функция запуска PHP с нужными переменными ----
 function runPHP(filePath, query, callback) {
   const php = spawn("php-cgi", [], {
     env: {
       ...process.env,
       REQUEST_METHOD: "GET",
       SCRIPT_FILENAME: filePath,
-      QUERY_STRING: query
+      QUERY_STRING: query,
+      REDIRECT_STATUS: 200 // ✅ ключевой момент для обхода security alert
     }
   });
 
@@ -35,7 +35,6 @@ const server = http.createServer((req, res) => {
   const queryParams = new URLSearchParams(queryString || "");
 
   if (urlPath === "/feed") {
-    // ----- /feed -----
     fs.readFile(feedFilePath, "utf8", (err, data) => {
       if (err) {
         res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
@@ -46,9 +45,8 @@ const server = http.createServer((req, res) => {
     });
 
   } else if (urlPath === "/results") {
-    // ----- /results -----
     const q = queryParams.get("q") || "";
-    lastSearchQuery = q; // Сначала обновляем динамическое значение
+    lastSearchQuery = q;
 
     const query = `q=${encodeURIComponent(q)}`;
     runPHP(searchPhpPath, query, (phpOutput) => {
@@ -58,12 +56,10 @@ const server = http.createServer((req, res) => {
     });
 
   } else if (urlPath === "/searchquery") {
-    // ----- /searchquery отдаёт чистый текст -----
     res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
     res.end(lastSearchQuery);
 
   } else {
-    // ----- Статические файлы -----
     const filePath = urlPath === "/" ? "/index.html" : urlPath;
     const fullPath = path.join(assetsPath, filePath);
 
