@@ -4,9 +4,10 @@ This project revives the HTML version of the 2016 YouTube mobile app. The origin
 ---
 
 Copyright's:
-
 - **Wert1209yt**
    - Creator of 2016YouTubeMobile
+- **Invidious**
+   - API for work search and other.
 - **Google**
    - YouTube owner
 - **YouTube**
@@ -16,6 +17,6 @@ Copyright's:
 
 ## What has been done
 - [x] Recommendations
-- [ ] Search - *Almost not started*
+- [ ] Search - *In progress*
 - [ ] Watch - *Almost not started*
 - [ ] Channel page - *Almost not started*
