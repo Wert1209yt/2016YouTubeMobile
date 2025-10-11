@@ -7,7 +7,7 @@ if ($query === '') {
 }
 $key = 'AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
 $clientVersion = '2.20251010.01.00';
-$url = 'https://www.youtube.com/youtubei/v1/search?key=' . $key;
+$url = 'https://m.youtube.com/youtubei/v1/search?key=' . $key;
 $post = ['context' => ['client' => ['hl' => 'ru', 'gl' => 'RU', 'clientName' => 'WEB', 'clientVersion' => $clientVersion]], 'query' => $query];
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
