@@ -8,7 +8,7 @@ $data = [
             'hl' => 'en',
             'gl' => 'US',
             'clientName' => 'WEB',
-            'clientVersion' => '2.20241011.00.00'
+            'clientVersion' => '2.20251010.01.00'
         ]
     ],
     'query' => $query
