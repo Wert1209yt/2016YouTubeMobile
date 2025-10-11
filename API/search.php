@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 $query = trim(file_get_contents('http://localhost:3000/searchquery'));
-$url = 'https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
+$url = 'https://m.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
 $data = [
     'context' => [
         'client' => [
