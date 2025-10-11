@@ -1,6 +1,6 @@
 <?php
 $query = trim(file_get_contents('http://localhost:8080/searchquery'));
-$url = 'https://www.youtube.com/youtubei/v1/search?key=AIzaSyC2N-9n7...';
+$url = 'https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
 $data = [
     'context' => [
         'client' => [
