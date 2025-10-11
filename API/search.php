@@ -1,5 +1,4 @@
 <?php
-header('Content-Type: application/json');
 $query = trim(file_get_contents('http://localhost:3000/searchquery'));
 $url = 'https://m.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
 $data = [
@@ -23,5 +22,6 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 $response = curl_exec($ch);
 curl_close($ch);
+header('Content-Type: application/json; charset=utf-8');
 echo $response;
 ?>
