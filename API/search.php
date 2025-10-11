@@ -33,9 +33,8 @@ function make_formatted_string($node) {
     return ['runs' => [['text' => $text]], 'item_type' => 'formatted_string'];
 }
 function make_runs_preserve($node) {
-    if (is_array($node) && isset($node['runs'])) {
-        $runs = $node['runs'];
-        return ['runs' => $runs, 'item_type' => 'formatted_string'];
+    if (is_array($node) && isset($node['runs']) && is_array($node['runs'])) {
+        return ['runs' => $node['runs'], 'item_type' => 'formatted_string'];
     }
     return make_formatted_string($node);
 }
@@ -58,7 +57,8 @@ function length_accessibility_label($time) {
 }
 function convert_video_renderer($v) {
     $id = $v['videoId'] ?? ($v['encrypted_id'] ?? '');
-    $title = isset($v['title']) ? make_runs_preserve($v['title']) : ['runs' => [['text' => get_first_text($v['title'] ?? '')]], 'item_type' => 'formatted_string'];
+    if ($id === '') return null;
+    $title = isset($v['title']) ? make_runs_preserve($v['title']) : make_formatted_string($v['title'] ?? '');
     $owner = [];
     if (isset($v['ownerText'])) $owner = make_runs_preserve($v['ownerText']);
     elseif (isset($v['shortBylineText'])) $owner = make_runs_preserve($v['shortBylineText']);
@@ -87,7 +87,7 @@ function convert_video_renderer($v) {
     $thumbnail_info = ['url' => $thumbUrl];
     if ($thumbWidth !== null) $thumbnail_info['width'] = $thumbWidth;
     if ($thumbHeight !== null) $thumbnail_info['height'] = $thumbHeight;
-    $res = [
+    return [
         'item_type' => 'compact_video',
         'encrypted_id' => $id,
         'title' => $title,
@@ -96,33 +96,32 @@ function convert_video_renderer($v) {
         'length' => $length_obj,
         'thumbnail_info' => $thumbnail_info
     ];
-    return $res;
 }
 function convert_channel_renderer($c) {
     $id = $c['channelId'] ?? ($c['encrypted_id'] ?? '');
+    if ($id === '') return null;
     $title = isset($c['title']) ? make_runs_preserve($c['title']) : make_formatted_string($c['title'] ?? $c['ownerText'] ?? '');
     $subscriber = '';
     if (isset($c['subscriberCountText'])) $subscriber = get_first_text($c['subscriberCountText']);
-    $res = [
+    return [
         'item_type' => 'compact_channel',
         'encrypted_id' => $id,
         'title' => $title,
         'subscriber_count' => ['runs' => [['text' => $subscriber]], 'item_type' => 'formatted_string']
     ];
-    return $res;
 }
 function convert_playlist_renderer($p) {
     $id = $p['playlistId'] ?? '';
+    if ($id === '') return null;
     $title = isset($p['title']) ? make_runs_preserve($p['title']) : make_formatted_string($p['title'] ?? '');
     $owner = '';
     if (isset($p['shortBylineText'])) $owner = get_first_text($p['shortBylineText']);
-    $res = [
+    return [
         'item_type' => 'compact_playlist',
         'encrypted_id' => $id,
         'title' => $title,
         'short_byline' => ['runs' => [['text' => $owner]], 'item_type' => 'formatted_string']
     ];
-    return $res;
 }
 $oldItems = [];
 function traverse_and_convert($node, &$out) {
@@ -149,4 +148,4 @@ function traverse_and_convert($node, &$out) {
 traverse_and_convert($newData, $oldItems);
 $output = ['status' => 'ok', 'content' => $oldItems, 'signed_in_username' => '', 'build_id' => 0];
 echo json_encode($output, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-```0
+?>
